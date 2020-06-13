@@ -3,10 +3,10 @@
   "displayName": "vs-auto-header",
   "description": "Insert header comment after creating a file or opening a file.",
   "version": "1.0.10",
-  "publisher": "appi-systems",
-  "repository": "https://github.com/appi-solutions/vs-auto-header",
+  "publisher": "cesumilo",
+  "repository": "https://github.com/cesumilo/vs-auto-header",
   "author": {
-    "name": "APPI SASU"
+    "name": "Guillaume Robin"
   },
   "license": "SEE LICENSE IN license.txt",
   "engines": {
@@ -36,7 +36,7 @@
         },
         "fileheader.Copyrights": {
           "type": "string",
-          "default": "APPI SASU",
+          "default": "GNU General Public License v3.0",
           "description": "Copyright"
         }
       }
