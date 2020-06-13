@@ -43,7 +43,8 @@
     }
   },
   "scripts": {
-    "postinstall": "node ./node_modules/vscode/bin/install"
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "prettier": "prettier --write \"{src,test}/**/*.{js,json,md}\""
   },
   "devDependencies": {
     "eslint": "^5.7.0",

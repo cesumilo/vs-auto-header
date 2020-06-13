@@ -37,19 +37,18 @@ This extension inserts an header in a new file or an existing file.
 
 1. [Usage](#usage)
 2. [Configure](#configure)
-3. [Futur implementations](#futur-implementations)
-4. [Release notes](#release-notes)
-5. [Known bugs](#known-bugs)
-6. [How to contribute?](#how-to-contribute)
-7. [Contributors](#contributors)
-8. [License](#license)
+3. [Future implementations](#future-implementations)
+4. [Changelog](#changelog)
+5. [How to contribute?](#how-to-contribute)
+6. [Contributors](#contributors)
+7. [License](#license)
 
 ## Usage
 
 When a new file is created and has code inside, VS Code will be able to detect which langage you are using and the extension will display a confirmation box (see below) to insert an header. In addition, if you open a file with code inside but which has no header, the extension will detect it and ask you if you want to insert one.
 
 <p align="center">
-  <img src="https://github.com/appi-solutions/vs-auto-header/raw/master/docs/img/confirmation.png" />
+  <img src="https://github.com/cesumilo/vs-auto-header/raw/master/docs/img/confirmation.png" />
 </p>
 
 ## Configure
@@ -59,19 +58,19 @@ When a new file is created and has code inside, VS Code will be able to detect w
 1. Go to `Preferences` > `Settings`
 
 <p align="center">
-  <img src="https://github.com/appi-solutions/vs-auto-header/raw/master/docs/img/preferences.png" />
+  <img src="https://github.com/cesumilo/vs-auto-header/raw/master/docs/img/preferences.png" />
 </p>
 
 2. Search by extension name in search bar
 
 <p align="center">
-  <img src="https://github.com/appi-solutions/vs-auto-header/raw/master/docs/img/search.png" />
+  <img src="https://github.com/cesumilo/vs-auto-header/raw/master/docs/img/search.png" />
 </p>
 
 3. Modify extension settings
 
 <p align="center">
-  <img src="https://github.com/appi-solutions/vs-auto-header/raw/master/docs/img/settings.png" />
+  <img src="https://github.com/cesumilo/vs-auto-header/raw/master/docs/img/settings.png" />
 </p>
 
 ### Project scope
@@ -81,8 +80,8 @@ You can also override global configuration using a file `.vsconfig` at the root 
 ```json
 {
   "fileheader": {
-    "Author": "APPI",
-    "Email": "support@appi-conseil.com",
+    "Author": "Guillaume Robin",
+    "Email": "my-email@gmail.com",
     "Copyrights": "GPL-3.0"
   }
 }
@@ -92,11 +91,27 @@ You can also override global configuration using a file `.vsconfig` at the root 
 
 ```javascript
 /**
- * @author APPI <xxxx@your-company.com>
+ * @author Guillaume Robin <my-email@gmail.com>
  * @file Description
  * @desc Created on 2019-08-28 12:18:44 pm
- * @copyright APPI SASU
+ * @copyright GPL-3.0
  */
+```
+
+## Getting started
+
+### Requirements
+
+1. Install tools for development
+
+```bash
+npm install -g yo generator-code vsce
+```
+
+2. Install dependencies
+
+```bash
+npm install
 ```
 
 ## Future implementations
@@ -105,27 +120,9 @@ _Feel free to propose new ideas by opening new issues ! :rocket:_
 
 - [x] Customized settings per project (v1.0.10)
 
-## Release notes
+## Changelog
 
-**v1.0.10**
-
-- Add per project configuration using `.vsconfig`
-- Add `python` support
-
-**v1.0.9**
-
-- Fixed vulnerabilities
-
-**v1.0.8**
-
-- New header format
-- Remove update date from header
-
-**Previous versions**
-
-- Inserts an header in new/existing file
-- Asks for permission to insert
-- Enter / Escape macros
+SEE CHANGELOG IN [CHANGELOG.md](CHANGELOG.md).
 
 ## How to contribute?
 

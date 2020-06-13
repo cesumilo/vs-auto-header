@@ -1,5 +1,11 @@
+/**
+ * @author Guillaume Robin <robinguillaume.pro@gmail.com>
+ * @file Entrypoint for vs-auto-header.
+ * @desc Created on 2020-06-13 7:35:28 pm
+ * @copyright GNU General Public License v3.0
+ */
 const vscode = require('vscode');
-const dictionnary = require('./headerFunctions').extCategory;
+const dictionary = require('./headerFunctions').extCategory;
 const fs = require('fs');
 
 /**
@@ -65,7 +71,7 @@ function activate() {
     if (editor) {
       const document = editor.document;
       const language = document.languageId;
-      dictionnary[language](config, document.fileName);
+      dictionary[language](config, document.fileName);
     }
   });
 }

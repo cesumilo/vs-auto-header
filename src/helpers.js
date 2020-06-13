@@ -22,7 +22,7 @@ exports.parseHeader = (fileName, type) => {
       }
       const lines = data.match(/[^\r\n]+/g);
       resolve(lines);
-    })
+    }),
   );
 };
 
@@ -44,7 +44,7 @@ function replaceHeader(lines, symbol, config) {
 
     const res = (vscode.InputBoxOptions = {
       prompt: 'Do you want an header in this file ?',
-      placeHolder: 'Y/n'
+      placeHolder: 'Y/n',
     });
 
     vscode.window.showInputBox(res).then(value => {
@@ -59,7 +59,7 @@ function replaceHeader(lines, symbol, config) {
             email: config.Email,
             lastModifiedBy: config.Author,
             createTime: time,
-            updateTime: time
+            updateTime: time,
           };
           try {
             templates.templates[symbol](editBuilder, data);

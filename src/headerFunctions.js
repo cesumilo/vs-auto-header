@@ -1,6 +1,5 @@
 const vscode = require('vscode');
 const { parseHeader, replaceHeader } = require('./helpers');
-const fs = require('fs');
 
 exports.extCategory = {
   javascript: readHeader(' * '),
@@ -26,13 +25,13 @@ exports.extCategory = {
   html: readHeader('<!--'),
   jade: readHeader('<!--'),
   xml: readHeader('<!--'),
-  python: readHeader('# ')
+  python: readHeader('# '),
 };
 
 exports.templates = {
   ' * ': popHeader('star'),
   '# ': popHeader('hashtag'),
-  '<!--': popHeader('html')
+  '<!--': popHeader('html'),
 };
 
 const settings = {
@@ -41,7 +40,7 @@ const settings = {
   hashtag:
     '##\r\n# @author {author} <{email}>\r\n # @file Description\r\n # @desc Created on {createTime}\r\n # @copyright {copyrights}\r\n #\r\n',
   html:
-    '<!--\r\n @author {author} <{email}>\r\n @file Description\r\n @desc Created on {createTime}\r\n @copyright {copyrights}\r\n -->\r\n'
+    '<!--\r\n @author {author} <{email}>\r\n @file Description\r\n @desc Created on {createTime}\r\n @copyright {copyrights}\r\n -->\r\n',
 };
 
 /**
@@ -88,7 +87,7 @@ function pushLoop(tpl, code) {
             .replace(/'/g, "\\'")
             .replace(/\n/g, '\\n')
             .replace(/\r/g, '\\r') +
-          "');"
+          "');",
       );
     };
   while ((match = re.exec(tpl)) !== null) {
@@ -115,7 +114,7 @@ function template(tpl) {
     'let r=[];',
     'const _html = function (str) {',
     "return str.replace(/&/g, '&amp;').replace(/\"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');",
-    '};'
+    '};',
   ];
   pushLoop(tpl, code);
   code.push("return r.join('');");
