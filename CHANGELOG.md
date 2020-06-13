@@ -1,5 +1,13 @@
 # Changelog
 
+**v1.1.0**
+
+- Fix hashtag placement
+- Fix vulnerabilities
+- Fix eslint configuration
+- Add prettier configuration
+- Update documentation
+
 **v1.0.10**
 
 - Add per project configuration using `.vsconfig`

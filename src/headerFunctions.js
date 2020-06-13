@@ -1,3 +1,9 @@
+/**
+ * @author Guillaume Robin <guillaume.robin@appi-conseil.com>
+ * @file functions to generate headers
+ * @desc Created on 2018-12-03 10:36:24 am
+ * @copyright APPI SASU
+ */
 const vscode = require('vscode');
 const { parseHeader, replaceHeader } = require('./helpers');
 

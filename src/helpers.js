@@ -1,6 +1,6 @@
 /**
  * @author Guillaume Robin <guillaume.robin@appi-conseil.com>
- * @file Description
+ * @file helpers function for vs-auto-header
  * @desc Created on 2018-12-03 10:36:24 am
  * @copyright APPI SASU
  */

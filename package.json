@@ -2,7 +2,7 @@
   "name": "vs-auto-header",
   "displayName": "vs-auto-header",
   "description": "Insert header comment after creating a file or opening a file.",
-  "version": "1.0.10",
+  "version": "1.1.0",
   "publisher": "cesumilo",
   "repository": "https://github.com/cesumilo/vs-auto-header",
   "author": {
