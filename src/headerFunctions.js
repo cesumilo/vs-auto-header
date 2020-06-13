@@ -38,7 +38,7 @@ const settings = {
   star:
     '/**\r\n * @author {author} <{email}>\r\n * @file Description\r\n * @desc Created on {createTime}\r\n * @copyright {copyrights}\r\n */\r\n',
   hashtag:
-    '##\r\n# @author {author} <{email}>\r\n # @file Description\r\n # @desc Created on {createTime}\r\n # @copyright {copyrights}\r\n #\r\n',
+    '##\r\n# @author {author} <{email}>\r\n# @file Description\r\n# @desc Created on {createTime}\r\n# @copyright {copyrights}\r\n#\r\n',
   html:
     '<!--\r\n @author {author} <{email}>\r\n @file Description\r\n @desc Created on {createTime}\r\n @copyright {copyrights}\r\n -->\r\n',
 };
