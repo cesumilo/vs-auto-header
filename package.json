@@ -51,7 +51,7 @@
     "lint-staged": "^7.3.0",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1",
-    "vscode": "^1.1.36"
+    "vscode": "^1.1.37"
   },
   "dependencies": {
     "config": "^2.0.1",
