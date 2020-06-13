@@ -7,6 +7,7 @@
 - Fix eslint configuration
 - Add prettier configuration
 - Update documentation
+- Support: TypeScript React, Dart, Bat, Powershell
 
 **v1.0.10**
 

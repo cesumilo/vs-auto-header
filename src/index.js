@@ -71,6 +71,7 @@ function activate() {
     if (editor) {
       const document = editor.document;
       const language = document.languageId;
+      console.log(`Language used: ${language}`);
       dictionary[language](config, document.fileName);
     }
   });

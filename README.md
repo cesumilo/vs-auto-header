@@ -32,6 +32,10 @@ This extension inserts an header in a new file or an existing file.
 - Jade
 - XML
 - Python
+- TypeScript React
+- Dart
+- Bat
+- Powershell
 
 ## Table of contents
 

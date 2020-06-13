@@ -24,6 +24,7 @@ exports.extCategory = {
   sql: readHeader(' * '),
   swift: readHeader(' * '),
   typescript: readHeader(' * '),
+  typescriptreact: readHeader(' * '),
   makefile: readHeader('# '),
   dockerfile: readHeader('# '),
   coffeescript: readHeader('# '),
@@ -32,12 +33,17 @@ exports.extCategory = {
   jade: readHeader('<!--'),
   xml: readHeader('<!--'),
   python: readHeader('# '),
+  dart: readHeader(' * '),
+  bat: readHeader('::'),
+  powershell: readHeader('<#'),
 };
 
 exports.templates = {
   ' * ': popHeader('star'),
   '# ': popHeader('hashtag'),
   '<!--': popHeader('html'),
+  '::': popHeader('semi'),
+  '<#': popHeader('power'),
 };
 
 const settings = {
@@ -47,6 +53,10 @@ const settings = {
     '##\r\n# @author {author} <{email}>\r\n# @file Description\r\n# @desc Created on {createTime}\r\n# @copyright {copyrights}\r\n#\r\n',
   html:
     '<!--\r\n @author {author} <{email}>\r\n @file Description\r\n @desc Created on {createTime}\r\n @copyright {copyrights}\r\n -->\r\n',
+  semi:
+    '::\r\n:: @author {author} <{email}>\r\n:: @file Description\r\n:: @desc Created on {createTime}\r\n:: @copyright {copyrights}\r\n::\r\n',
+  power:
+    '<#\r\n # @author {author} <{email}>\r\n # @file Description\r\n # @desc Created on {createTime}\r\n # @copyright {copyrights}\r\n#>\r\n',
 };
 
 /**

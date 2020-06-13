@@ -35,6 +35,11 @@ exports.parseHeader = (fileName, type) => {
 function replaceHeader(lines, symbol, config) {
   return new Promise((resolve, reject) => {
     const editor = vscode.editor || vscode.window.activeTextEditor;
+
+    if (!lines) {
+      return reject();
+    }
+
     for (let x = 0; x < lines.length; x++) {
       const res = lines[x].match(/[ *#]+@author/g);
       if (res !== null) {
